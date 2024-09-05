@@ -24,4 +24,5 @@ html, body{
     width: 40vw;
     height: 50vh;
     border: solid;
+    border-radius: 1vw;
 }
