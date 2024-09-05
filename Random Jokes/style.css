@@ -20,3 +20,8 @@ html, body{
     font-family: "Red Hat Text", sans-serif;
     background-color: var(--Rose_300);
 }
+.main_container{
+    width: 40vw;
+    height: 50vh;
+    border: solid;
+}
