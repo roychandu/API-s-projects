@@ -8,9 +8,7 @@ function getData(){
         return Request.json();
     })
     .then((data) =>{
-        const imgs = document.createElement("img");
-        imgs.src = data.preview[2];
-        memebox.appendChild(imgs);
+        memebox.style.backgroundImage = `url('${data.preview[2]}')`;
         title.innerHTML = data.title;
     })
 }
