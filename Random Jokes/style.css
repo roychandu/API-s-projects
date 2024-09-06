@@ -41,3 +41,14 @@ html, body{
     font-weight: 500;
     color: var(--Rose_100);
 }
+button{
+    padding: 0.5vw 3vw;
+    font-size: 1.2vw;
+    border-radius: 1vw;
+    font-weight: 500;
+    background-color: var(--Red);
+    border: none;
+}
+button:hover{
+    box-shadow: 0 0 10px 1px var(--Red);
+}
