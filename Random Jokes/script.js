@@ -1,6 +1,7 @@
 const url = " https://meme-api.com/gimme";
 const memebox = document.querySelector(".memes_box");
 const title = document.querySelector(".title");
+const reloadbtn = document.querySelector(".reload");
 
 function getData(){
     fetch(url)
@@ -13,3 +14,6 @@ function getData(){
     })
 }
 getData();
+reloadbtn.addEventListener("click", () =>{
+    getData();
+})
