@@ -23,7 +23,6 @@ html, body{
 .main_container{
     width: 40vw;
     height: 60vh;
-    border: solid;
     gap: 1vw;
     flex-direction: column;
     border-radius: 1vw;
@@ -55,4 +54,21 @@ button:hover{
 button:active{
     transform: scale(0.95);
     background-color: var(--Rose_50);
+}
+
+
+/* for responsive  */
+@media (max-width : 600px) {
+    .main_container{
+        width: 80%;
+    }
+    .memes_box{
+        width: 90%;
+    }
+    .title{
+        font-size: 5vw;
+    }
+    .reload{
+        font-size: 5vw;
+    }
 }
