@@ -52,3 +52,7 @@ button{
 button:hover{
     box-shadow: 0 0 10px 1px var(--Red);
 }
+button:active{
+    transform: scale(0.95);
+    background-color: var(--Rose_50);
+}
