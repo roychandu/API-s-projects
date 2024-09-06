@@ -22,22 +22,22 @@ html, body{
 }
 .main_container{
     width: 40vw;
-    height: 50vh;
+    height: 60vh;
     border: solid;
-    gap: 2vw;
+    gap: 1vw;
     flex-direction: column;
     border-radius: 1vw;
+    background-image: linear-gradient(to bottom right, var(--Red), var(--Green), var(--Rose_500));
 }
 .memes_box{
-    width: 30%;
-    height: 50%;
-    border: solid;
+    width: 50%;
+    height: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .title{
-    width: 20vw;
-    height: 10vh;
-    border: solid;
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: var(--Rose_100);
 }
