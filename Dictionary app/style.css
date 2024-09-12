@@ -61,4 +61,11 @@ input:focus {
     border-radius: 1vw;
 }
 
-
+.search_field{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vw;
+    border: solid;
+}
