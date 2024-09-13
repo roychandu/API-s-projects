@@ -17,10 +17,28 @@ search_btn.addEventListener("click", () =>{
 
            meaning_part.innerHTML = "";
            for(let i = 0; i < data.length; i++){
-                const meanings = document.createElement("div");
-                meanings.className = "meanings";
+                const meaningsDiv = document.createElement("div");
+                meaningsDiv.className = "meanings";
+                
+                let meaningsdatalen = data[i].meanings.length;
+                let meaningsdata = data[i].meanings;
+                
+                for(let j = 0; j < meaningsdatalen; j++){
+                    const partOfSpeech = document.createElement("p");
+                    partOfSpeech.innerHTML= meaningsdata[j].partOfSpeech;
+                    
+                    let definitionslen = meaningsdata[j].definitions.length;
+                    let definitionsdata = meaningsdata[j].definitions;
 
 
+                    for(let k = 0; k < definitionslen; k++){
+                        const definitions = document.createElement("p");
+                        definitions.innerHTML = definitionsdata[k].definition;
+                        partOfSpeech.appendChild(definitions);
+                    }
+                    meaningsDiv.appendChild(partOfSpeech);
+                }
+                meaning_part.appendChild(meaningsDiv);
            }
         })
         .catch(() =>{
