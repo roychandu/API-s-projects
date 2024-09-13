@@ -63,9 +63,18 @@ input:focus {
 
 .search_field{
     width: 40%;
+    margin-top: 2vw;
+    padding: 0 1vw;
+}
+.row1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2vw;
     border: solid;
+}
+.row2{
+    padding-top: 1vw;
+}
+#inp_word{
+    color: #fff;
 }
