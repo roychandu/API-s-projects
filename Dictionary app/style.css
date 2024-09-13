@@ -89,13 +89,12 @@ input:focus {
 }
 .meanings{
     color: #fff;
-}
-.partofspeech p:nth-of-type(1){
-    border-top: 1px solid #DE55DE;
-    padding-top: 2vw;
+    padding: 0 1vw;
+    border: solid;
+    margin-bottom: 2vw;
+    border-radius: 1vw;
 }
 .partofspeech{
-    border: solid #fff;
-    padding: 1vw 1vw;
-    border-radius: 1vw;
+    font-size: 1.6vw;
+    border-bottom: 1px solid #DE55DE;
 }

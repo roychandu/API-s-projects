@@ -34,14 +34,14 @@ search_btn.addEventListener("click", () =>{
                     let definitionslen = meaningsdata[j].definitions.length;
                     let definitionsdata = meaningsdata[j].definitions;
 
+                    meaningsDiv.appendChild(partOfSpeech);
 
                     for(let k = 0; k < definitionslen; k++){
                         const definitions = document.createElement("p");
                         definitions.className = "definitions";
                         definitions.innerHTML = definitionsdata[k].definition;
-                        partOfSpeech.appendChild(definitions);
+                        meaningsDiv.appendChild(definitions);
                     }
-                    meaningsDiv.appendChild(partOfSpeech);
                 }
                 meaning_part.appendChild(meaningsDiv);
            }
