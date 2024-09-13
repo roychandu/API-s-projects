@@ -98,3 +98,31 @@ input:focus {
     font-size: 1.6vw;
     border-bottom: 1px solid #DE55DE;
 }
+
+
+/* for responsiveness  */
+@media (max-width : 600px) {
+    .search_bar{
+        width: 80%;
+        padding: 0 3vw;
+    }
+    .fi-br-search{
+        font-size: 5vw;
+    }
+    .fi-ss-sparkles{
+        font-size: 2vw;
+    }
+    .search_bar input{
+        font-size: 3vw;
+        height: 10vw;
+    }
+    .fi-tr-paper-plane-top{
+        font-size: 4vw;
+    }
+    .search_field{
+        width: 80%;
+    }
+    .partofspeech{
+        font-size: 4vw;
+    }
+}
