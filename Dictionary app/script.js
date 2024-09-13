@@ -45,6 +45,10 @@ search_btn.addEventListener("click", () =>{
                 }
                 meaning_part.appendChild(meaningsDiv);
            }
+
+        // for audio 
+           volume.setAttribute("src", data[0].phonetics[0].audio)
+           console.log(volume);
         })
         .catch(() =>{
             inp_word.innerHTML = "Couldn't find the word!!";
@@ -56,4 +60,7 @@ search_btn.addEventListener("click", () =>{
 
 function focusInput(){
     inp_text.focus();
+}
+function playsound(){
+    volume.play();
 }
