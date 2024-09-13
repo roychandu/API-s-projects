@@ -16,6 +16,8 @@ search_btn.addEventListener("click", () =>{
             volume.style.opacity = "1"
 
            meaning_part.innerHTML = "";
+           meaning_part.style.height = "auto";
+
            for(let i = 0; i < data.length; i++){
                 const meaningsDiv = document.createElement("div");
                 meaningsDiv.className = "meanings";
@@ -44,5 +46,7 @@ search_btn.addEventListener("click", () =>{
         .catch(() =>{
             inp_word.innerHTML = "word not found";
             volume.style.opacity = "0"
+            meaning_part.innerHTML = "";
+            meaning_part.style.height = "auto";
         })
 })
