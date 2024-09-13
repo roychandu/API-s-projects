@@ -63,6 +63,7 @@ input:focus {
 
 .search_field{
     width: 40%;
+    border: solid #fff;
     margin-top: 2vw;
     padding: 0 1vw;
 }
@@ -72,9 +73,18 @@ input:focus {
     align-items: center;
     border: solid;
 }
+#inp_word{
+    color: #fff;
+}
 .row2{
     padding-top: 1vw;
+    border: solid;
+    max-height: 60vh;
+    overflow-y: scroll;
 }
-#inp_word{
+.row2::-webkit-scrollbar {
+    display: none;
+}
+.meanings{
     color: #fff;
 }
