@@ -22,7 +22,7 @@ html, body{
     padding-right: 1vw;
     background-color: #181C49;
     border-radius: 1vw;
-
+    cursor: pointer;
 }
 .fi-br-search{
     font-size: 2vw;
@@ -45,7 +45,8 @@ html, body{
     font-weight: 500;
     color: #fff;
     background-color: #181C49;
-    border: none
+    border: none;
+    cursor: pointer;
 }
 input:focus {
     outline: none;
@@ -60,25 +61,26 @@ input:focus {
     padding: 0.5vw 1vw 0.3vw 1vw;
     border-radius: 1vw;
 }
+.fi-ss-volume{
+    color: #fff;
+    cursor: pointer;
+}
 
 .search_field{
     width: 40%;
-    border: solid #fff;
     margin-top: 2vw;
-    padding: 0 1vw;
+    /* padding: 0 1vw; */
 }
 .row1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid;
 }
 #inp_word{
     color: #fff;
 }
 .row2{
     padding-top: 1vw;
-    border: solid;
     max-height: 60vh;
     overflow-y: scroll;
 }
@@ -87,4 +89,13 @@ input:focus {
 }
 .meanings{
     color: #fff;
+}
+.partofspeech p:nth-of-type(1){
+    border-top: 1px solid #DE55DE;
+    padding-top: 2vw;
+}
+.partofspeech{
+    border: solid #fff;
+    padding: 1vw 1vw;
+    border-radius: 1vw;
 }

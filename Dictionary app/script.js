@@ -27,7 +27,9 @@ search_btn.addEventListener("click", () =>{
                 
                 for(let j = 0; j < meaningsdatalen; j++){
                     const partOfSpeech = document.createElement("p");
+                    partOfSpeech.className = "partofspeech";
                     partOfSpeech.innerHTML= meaningsdata[j].partOfSpeech;
+                    
                     
                     let definitionslen = meaningsdata[j].definitions.length;
                     let definitionsdata = meaningsdata[j].definitions;
@@ -35,6 +37,7 @@ search_btn.addEventListener("click", () =>{
 
                     for(let k = 0; k < definitionslen; k++){
                         const definitions = document.createElement("p");
+                        definitions.className = "definitions";
                         definitions.innerHTML = definitionsdata[k].definition;
                         partOfSpeech.appendChild(definitions);
                     }
@@ -44,9 +47,13 @@ search_btn.addEventListener("click", () =>{
            }
         })
         .catch(() =>{
-            inp_word.innerHTML = "word not found";
+            inp_word.innerHTML = "Couldn't find the word!!";
             volume.style.opacity = "0"
             meaning_part.innerHTML = "";
             meaning_part.style.height = "auto";
         })
 })
+
+function focusInput(){
+    inp_text.focus();
+}
